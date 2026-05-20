@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — RabbitToys</title>
+<meta name="description" content="Our complete collection of heirloom-quality children's toys. Hand-picked, story-rich, beautifully made." />
+<link rel="icon" type="image/jpeg" href="logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-header">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a><span>·</span>Portfolio</div>
+    <h1>The <em>collection</em>.</h1>
+    <p>Every toy has earned its place. Browse our complete catalogue of curated, story-driven pieces.</p>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <div class="container">
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All Stories</button>
+      <button class="filter-btn" data-filter="wooden">Wooden Workshop</button>
+      <button class="filter-btn" data-filter="plush">Plush Atelier</button>
+      <button class="filter-btn" data-filter="learning">Learning Library</button>
+      <button class="filter-btn" data-filter="gifts">Gift Sets</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+      <a href="#" class="portfolio-card" data-cat="wooden">
+        <div class="portfolio-bg pf-1">
+          <svg width="50%" viewBox="0 0 100 100">
+            <rect x="20" y="30" width="60" height="50" rx="6" fill="#c44a3d"/>
+            <rect x="28" y="38" width="44" height="20" fill="#e6b94a"/>
+            <circle cx="32" cy="80" r="8" fill="#14233f"/>
+            <circle cx="68" cy="80" r="8" fill="#14233f"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Wooden Workshop</div>
+          <div class="pf-title">Bramble Lane Pull-Cart</div>
+          <div class="pf-desc">A handcrafted heirloom from our Pune workshop.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="plush">
+        <div class="portfolio-bg pf-2">
+          <svg width="55%" viewBox="0 0 100 100">
+            <ellipse cx="50" cy="58" rx="32" ry="30" fill="#6fb3d8"/>
+            <ellipse cx="38" cy="22" rx="8" ry="18" fill="#6fb3d8"/>
+            <ellipse cx="62" cy="22" rx="8" ry="18" fill="#6fb3d8"/>
+            <circle cx="42" cy="52" r="3" fill="#14233f"/>
+            <circle cx="58" cy="52" r="3" fill="#14233f"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Plush Atelier</div>
+          <div class="pf-title">Captain Whiskers</div>
+          <div class="pf-desc">Whisper-soft, hypoallergenic, irresistibly huggable.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="learning">
+        <div class="portfolio-bg pf-3">
+          <svg width="55%" viewBox="0 0 100 100">
+            <rect x="18" y="18" width="24" height="24" rx="2" fill="#3b6ca8"/>
+            <rect x="46" y="18" width="24" height="24" rx="2" fill="#c44a3d"/>
+            <rect x="32" y="46" width="24" height="24" rx="2" fill="#e6b94a"/>
+            <rect x="60" y="46" width="24" height="24" rx="2" fill="#4a8b5a"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Learning Library</div>
+          <div class="pf-title">Alphabet Adventure Blocks</div>
+          <div class="pf-desc">26 letters. A thousand first words.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="wooden">
+        <div class="portfolio-bg pf-4">
+          <svg width="55%" viewBox="0 0 100 100">
+            <rect x="25" y="40" width="50" height="35" rx="4" fill="#8c6c3c"/>
+            <rect x="30" y="48" width="40" height="6" fill="#e6b94a"/>
+            <rect x="30" y="58" width="40" height="6" fill="#e6b94a"/>
+            <polygon points="25,40 50,20 75,40" fill="#c44a3d"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Wooden Workshop</div>
+          <div class="pf-title">The Tiny House</div>
+          <div class="pf-desc">Open-plan dollhouse with hand-painted interiors.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="plush">
+        <div class="portfolio-bg pf-5">
+          <svg width="55%" viewBox="0 0 100 100">
+            <ellipse cx="50" cy="60" rx="30" ry="28" fill="#d4a8b8"/>
+            <circle cx="35" cy="38" r="10" fill="#d4a8b8"/>
+            <circle cx="65" cy="38" r="10" fill="#d4a8b8"/>
+            <circle cx="40" cy="58" r="2.5" fill="#14233f"/>
+            <circle cx="60" cy="58" r="2.5" fill="#14233f"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Plush Atelier</div>
+          <div class="pf-title">Lady Hazel the Bear</div>
+          <div class="pf-desc">A bedtime companion stitched with care.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="learning">
+        <div class="portfolio-bg pf-6">
+          <svg width="55%" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="36" fill="#f7e4c4"/>
+            <circle cx="50" cy="50" r="28" fill="none" stroke="#8c6c3c" stroke-width="1.5"/>
+            <path d="M50 30 L50 50 L62 56" stroke="#14233f" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Learning Library</div>
+          <div class="pf-title">Little Hours Clock</div>
+          <div class="pf-desc">Teaching time, one careful tick at a time.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="gifts">
+        <div class="portfolio-bg pf-1">
+          <svg width="55%" viewBox="0 0 100 100">
+            <rect x="20" y="35" width="60" height="50" fill="#c44a3d"/>
+            <rect x="20" y="35" width="60" height="10" fill="#e6b94a"/>
+            <rect x="46" y="35" width="8" height="50" fill="#e6b94a"/>
+            <ellipse cx="50" cy="32" rx="10" ry="6" fill="#e6b94a"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Gift Sets</div>
+          <div class="pf-title">The First Birthday Box</div>
+          <div class="pf-desc">Three treasures, one unforgettable morning.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="wooden">
+        <div class="portfolio-bg pf-3">
+          <svg width="55%" viewBox="0 0 100 100">
+            <rect x="30" y="35" width="40" height="40" rx="4" fill="#8c6c3c"/>
+            <circle cx="50" cy="55" r="12" fill="#e6b94a"/>
+            <circle cx="50" cy="55" r="6" fill="#14233f"/>
+            <rect x="40" y="20" width="20" height="15" fill="#c44a3d"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Wooden Workshop</div>
+          <div class="pf-title">Hammer-and-Peg Bench</div>
+          <div class="pf-desc">Hand-eye coordination, the old-fashioned way.</div>
+        </div>
+      </a>
+
+      <a href="#" class="portfolio-card" data-cat="gifts">
+        <div class="portfolio-bg pf-2">
+          <svg width="55%" viewBox="0 0 100 100">
+            <rect x="22" y="30" width="56" height="50" rx="3" fill="#3b6ca8"/>
+            <rect x="22" y="48" width="56" height="4" fill="#e6b94a"/>
+            <rect x="48" y="30" width="4" height="50" fill="#e6b94a"/>
+            <circle cx="50" cy="50" r="6" fill="#c44a3d"/>
+          </svg>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="pf-tag">Gift Sets</div>
+          <div class="pf-title">The Welcome Home Set</div>
+          <div class="pf-desc">A new-baby hamper, lovingly assembled.</div>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align:center; margin-top: 64px;">
+      <p style="color: var(--ink-muted); margin-bottom: 24px;">Looking for something specific?</p>
+      <a href="https://wa.me/919881742326" class="btn btn-outline">WhatsApp Our Curator <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-inner">
+      <h2>New stories <em>every</em> month.</h2>
+      <p>Be the first to know when fresh pieces enter the collection.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="shared.js"></script>
+<script>
+  // Portfolio filtering
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.portfolio-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.cat === filter) {
+            card.style.display = '';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>
