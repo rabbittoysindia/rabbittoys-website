@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabbit Toys | Toys That Tell Stories</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: #fffaf5;
+      overflow-x: hidden;
+    }
+
+    .gradient-bg{
+      background: linear-gradient(to right, #fff7ed, #fef3c7);
+    }
+
+    .hero-btn{
+      transition: 0.3s;
+    }
+
+    .hero-btn:hover{
+      transform: translateY(-3px);
+    }
+
+    .toy-card{
+      transition: 0.3s;
+    }
+
+    .toy-card:hover{
+      transform: translateY(-8px);
+    }
+
+    .floating{
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg" class="w-16 h-16 object-contain" />
+        <div>
+          <h1 class="text-2xl font-bold text-orange-500">Rabbit Toys</h1>
+          <p class="text-sm text-gray-500">Toys that tell stories</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex gap-8 font-medium text-gray-700">
+        <a href="#home" class="hover:text-orange-500">Home</a>
+        <a href="#about" class="hover:text-orange-500">About</a>
+        <a href="#collections" class="hover:text-orange-500">Collections</a>
+        <a href="#gallery" class="hover:text-orange-500">Gallery</a>
+        <a href="#blog" class="hover:text-orange-500">Blog</a>
+        <a href="#contact" class="hover:text-orange-500">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="gradient-bg py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
+          Toys That <span class="text-orange-500">Tell Stories</span>
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+          Discover premium toys designed to spark imagination, creativity, and joyful childhood memories.
+        </p>
+
+        <div class="mt-8 flex gap-4 flex-wrap">
+
+          <a href="https://wa.me/919881742326"
+             target="_blank"
+             class="hero-btn bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg">
+             Order on WhatsApp
+          </a>
+
+          <a href="#collections"
+             class="hero-btn bg-white text-orange-500 border border-orange-300 px-8 py-4 rounded-full font-semibold">
+             Explore Toys
+          </a>
+
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <img src="logo.jpg"
+             class="w-[400px] floating rounded-3xl shadow-2xl">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-bold text-gray-800">
+        Welcome to Rabbit Toys
+      </h2>
+
+      <p class="mt-6 text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
+        At Rabbit Toys, we believe every toy carries a story, a smile, and a spark of imagination.
+        Our carefully selected collection brings together fun, learning, creativity, and memorable experiences for children of all ages.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section id="collections" class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+        <h2 class="text-4xl font-bold text-gray-800">
+          Our Toy Collections
+        </h2>
+        <p class="mt-4 text-gray-600">
+          Premium toys for every age and imagination.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="toy-card bg-orange-50 p-8 rounded-3xl shadow-sm">
+          <div class="text-5xl">🧩</div>
+          <h3 class="text-2xl font-semibold mt-4">Educational Toys</h3>
+          <p class="mt-3 text-gray-600">
+            Learning toys designed to build creativity and intelligence.
+          </p>
+        </div>
+
+        <div class="toy-card bg-blue-50 p-8 rounded-3xl shadow-sm">
+          <div class="text-5xl">🚗</div>
+          <h3 class="text-2xl font-semibold mt-4">Remote Control Toys</h3>
+          <p class="mt-3 text-gray-600">
+            Exciting RC cars and gadgets kids absolutely love.
+          </p>
+        </div>
+
+        <div class="toy-card bg-yellow-50 p-8 rounded-3xl shadow-sm">
+          <div class="text-5xl">🧸</div>
+          <h3 class="text-2xl font-semibold mt-4">Soft Toys</h3>
+          <p class="mt-3 text-gray-600">
+            Cute and cuddly companions for every child.
+          </p>
+        </div>
+
+        <div class="toy-card bg-pink-50 p-8 rounded-3xl shadow-sm">
+          <div class="text-5xl">👶</div>
+          <h3 class="text-2xl font-semibold mt-4">Baby Toys</h3>
+          <p class="mt-3 text-gray-600">
+            Safe and joyful toys for early childhood development.
+          </p>
+        </div>
+
+        <div class="toy-card bg-green-50 p-8 rounded-3xl shadow-sm">
+          <div class="text-5xl">🎯</div>
+          <h3 class="text-2xl font-semibold mt-4">Outdoor Toys</h3>
+          <p class="mt-3 text-gray-600">
+            Fun outdoor play equipment to keep kids active.
+          </p>
+        </div>
+
+        <div class="toy-card bg-purple-50 p-8 rounded-3xl shadow-sm">
+          <div class="text-5xl">🎁</div>
+          <h3 class="text-2xl font-semibold mt-4">Gift Collections</h3>
+          <p class="mt-3 text-gray-600">
+            Perfect birthday and special occasion gift ideas.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+        <h2 class="text-4xl font-bold text-gray-800">
+          Featured Collection
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=1200&auto=format&fit=crop"
+             class="rounded-3xl shadow-lg h-72 w-full object-cover">
+
+        <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?q=80&w=1200&auto=format&fit=crop"
+             class="rounded-3xl shadow-lg h-72 w-full object-cover">
+
+        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop"
+             class="rounded-3xl shadow-lg h-72 w-full object-cover">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="py-20 bg-orange-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+        <h2 class="text-4xl font-bold text-gray-800">
+          Latest Blogs
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+          <h3 class="text-2xl font-semibold">
+            Best Educational Toys For Kids
+          </h3>
+          <p class="mt-4 text-gray-600">
+            Discover toys that improve creativity and learning.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+          <h3 class="text-2xl font-semibold">
+            Safe Toys For Toddlers
+          </h3>
+          <p class="mt-4 text-gray-600">
+            Learn how to choose safe and age-appropriate toys.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+          <h3 class="text-2xl font-semibold">
+            Birthday Gift Ideas For Children
+          </h3>
+          <p class="mt-4 text-gray-600">
+            Amazing toy gift ideas kids will absolutely love.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-bold text-gray-800">
+        Contact Rabbit Toys
+      </h2>
+
+      <p class="mt-6 text-lg text-gray-600">
+        We'd love to help you find the perfect toy.
+      </p>
+
+      <div class="mt-10 flex flex-col md:flex-row justify-center gap-6">
+
+        <a href="https://wa.me/919881742326"
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg">
+           WhatsApp Us
+        </a>
+
+        <a href="mailto:rabbittoysindia@gmail.com"
+           class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg">
+           Send Email
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-10">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <img src="logo.jpg"
+           class="w-24 mx-auto mb-4 rounded-xl">
+
+      <h3 class="text-2xl font-bold">
+        Rabbit Toys
+      </h3>
+
+      <p class="mt-3 text-gray-400">
+        Toys that tell stories
+      </p>
+
+      <p class="mt-6 text-sm text-gray-500">
+        © 2026 Rabbit Toys. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
