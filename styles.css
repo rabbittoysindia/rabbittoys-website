@@ -262,7 +262,7 @@
   /* ---------- product photos (real catalogue) ---------- */
   /* Photos drop into the .pic box and crop neatly. Until a real
      image exists at the given path, the gift-box placeholder shows. */
-  .product .pic{overflow:hidden}
+  .product .pic img,
   .prod-img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block}
   .product .pic .ph-svg{position:relative;z-index:1}
 
