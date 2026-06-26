@@ -256,8 +256,8 @@
   .faq details[open] summary::after{content:"–"}
   .faq p{color:var(--navy-soft);font-weight:600;padding:0 0 1rem;margin:0}
   @media(max-width:820px){.howto{grid-template-columns:1fr}}
-.logo-img{height:44px;width:auto;display:block}
-@media(max-width:540px){.logo-img{height:38px}}
+.logo-img{height:84px;width:auto;display:block}
+@media(max-width:720px){.logo-img{height:84px}}
 
   /* ---------- product photos (real catalogue) ---------- */
   /* Photos drop into the .pic box and crop neatly. Until a real
